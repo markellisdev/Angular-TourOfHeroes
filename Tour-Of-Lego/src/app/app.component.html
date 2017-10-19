@@ -10,13 +10,17 @@
 <h1>{{title}}</h1>
 <h2>My Legos</h2>
 <ul class="legos">
-  <li *ngFor="let lego of legos">
+  <li *ngFor="let lego of legos"
+    (click)="onSelect(lego)"
+    [class.selected]="lego === selectedLego">
     <span class="badge">{{lego.id}}</span> {{lego.name}}
   </li>
 </ul>
-<h2>{{lego.name}} details!</h2>
-<div><label>id: </label>{{lego.id}}</div>
-<div>
-  <label>name: </label>
-  <input [(ngModel)]="lego.name" placeholder="name">
+<div *ngIf="selectedLego">
+  <h2>{{selectedLego.name}} details!</h2>
+  <div><label>id: </label>{{selectedLego.id}}</div>
+  <div>
+    <label>name: </label>
+    <input [(ngModel)]="selectedLego.name" placeholder="name">
+  </div>
 </div>

@@ -7,11 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Tour Of Legos';
-  lego: Lego = {
-    id: 1,
-    name: 'Lloyd Garmadon'
-  }
+  // lego: Lego = {
+  //   id: 1,
+  //   name: 'Lloyd Garmadon'
+  // }
   legos = LEGOS;
+  selectedLego: Lego;
+  onSelect(lego: Lego): void {
+    this.selectedLego = lego;
+  }
 }
 export class Lego {
   id: number;
