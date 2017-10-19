@@ -11,6 +11,7 @@ export class AppComponent {
     id: 1,
     name: 'Lloyd Garmadon'
   }
+  legos = LEGOS;
 }
 export class Lego {
   id: number;
@@ -29,5 +30,3 @@ const LEGOS: Lego[] = [
   {id: 19, name: 'Shark Army Great White'},
   {id: 20, name: 'Star Wars Inquisitor'},
 ]
-
-legos = LEGOS;
