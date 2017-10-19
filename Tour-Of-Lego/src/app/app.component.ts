@@ -29,3 +29,5 @@ const LEGOS: Lego[] = [
   {id: 19, name: 'Shark Army Great White'},
   {id: 20, name: 'Star Wars Inquisitor'},
 ]
+
+legos = LEGOS;
