@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Lego } from './lego'
 
 @Component({
   selector: 'app-root',
@@ -16,10 +17,6 @@ export class AppComponent {
   onSelect(lego: Lego): void {
     this.selectedLego = lego;
   }
-}
-export class Lego {
-  id: number;
-  name: string;
 }
 
 const LEGOS: Lego[] = [

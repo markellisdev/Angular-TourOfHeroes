@@ -1,3 +1,12 @@
+import 'zone.js';
+import 'reflect-metadata';
+/** Was getting "Uncaught reflect-metadata shim is required when using class decorators" error
+ * The above solution found on Stack Overflow
+ * https://stackoverflow.com/questions/43333522/angular4-core-es5-js-uncaught-reflect-metadata-shim-is-required-when-using-class
+ * 
+ */
+
+ 
 /**
  * This file includes polyfills needed by Angular and is loaded before the app.
  * You can add your own extra polyfills to this file.

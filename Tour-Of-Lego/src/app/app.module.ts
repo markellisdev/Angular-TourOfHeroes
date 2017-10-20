@@ -5,10 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { LegoDetailComponent } from './lego-detail/lego-detail.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    LegoDetailComponent
+    LegoDetailComponent,
   ],
   imports: [
     BrowserModule,

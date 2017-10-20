@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Lego } from '../lego';
 
 @Component({
   selector: 'app-lego-detail',
@@ -11,5 +12,7 @@ export class LegoDetailComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  lego: Lego;
 
 }
